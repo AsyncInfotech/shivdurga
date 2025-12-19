@@ -3,251 +3,194 @@
 <head>
   <meta charset="UTF-8" />
   <title>Sundarbans Tour</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Tailwind CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Custom Fonts / Colors (Optional) -->
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            primary: "#14532d",
-            secondary: "#22c55e",
-            accent: "#0f172a"
-          }
-        }
-      }
-    }
-  </script>
+  <!-- Bootstrap Icons CDN -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+
+  <!-- Custom CSS -->
+   <link href="asstes/css/style.css" rel="stylesheet">
+  <style>
+    
+
+  </style>
 </head>
+<body>
 
-<body class="bg-white text-gray-800">
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top shadow-sm" style="background:#e9e6df;">
+  <div class="container py-2">
 
-<!-- ================= Navbar ================= -->
-<nav class="fixed top-0 left-0 right-0 z-50 bg-[#e9e6df] border-b border-black/5">
-  <div class="container mx-auto px-6">
-    <div class="flex items-center justify-between h-20">
-
-      <!-- Logo -->
-      <a href="/" class="flex items-center gap-3">
-        <div class="w-10 h-10 rounded-full bg-[#1f5f4a] flex items-center justify-center">
-          <span class="text-white font-bold">SD</span>
-        </div>
-        <div>
-          <p class="font-semibold text-[#1f5f4a] leading-none">Shiv Durga</p>
-          <p class="text-sm text-[#6b8f84] leading-none">Travels</p>
-        </div>
-      </a>
-
-      <!-- Desktop Menu -->
-      <div class="hidden md:flex items-center gap-10">
-        <a href="/" class="font-medium text-[#1f5f4a]">Home</a>
-        <a href="/" class="font-medium text-[#6b8f84] hover:text-[#1f5f4a]">About</a>
-        <a href="/" class="font-medium text-[#6b8f84] hover:text-[#1f5f4a]">Services</a>
-        <a href="/" class="font-medium text-[#6b8f84] hover:text-[#1f5f4a]">Contact</a>
+    <!-- Logo -->
+    <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+      <div class="rounded-circle d-flex align-items-center justify-content-center"
+           style="width:45px;height:45px;background:#1f4f45;color:#fff;font-weight:600;">
+        SD
       </div>
-
-      <!-- Right CTA -->
-      <div class="hidden md:flex items-center gap-6">
-        <div class="flex items-center gap-2 text-[#6b8f84]">
-          <i data-lucide="phone" class="w-4 h-4"></i>
-          <span class="font-medium">+91 94321 40363</span>
-        </div>
-
-        <a href="/contact.html"
-           class="px-6 py-2 rounded-xl bg-[#d77d22] text-white font-medium hover:bg-[#c56f1d] transition">
-          Book Now
-        </a>
+      <div>
+        <strong style="color:#1f4f45;font-size:18px;">Shiv Durga</strong><br>
+        <small class="text-muted" style="margin-top:-5px;display:block;">Travels</small>
       </div>
+    </a>
 
-      <!-- Mobile Button -->
-      <button id="menuBtn" class="md:hidden text-[#1f5f4a]">
-        <i data-lucide="menu" class="w-7 h-7"></i>
-      </button>
+    <!-- Mobile Toggle -->
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+      <i class="bi bi-list" style="font-size:28px;color:#1f4f45;"></i>
+    </button>
 
-    </div>
+    <!-- Nav Menu -->
+    <div id="mainNav" class="collapse navbar-collapse justify-content-end">
+      <ul class="navbar-nav align-items-lg-center gap-lg-4">
 
-    <!-- Mobile Menu -->
-    <div id="mobileMenu" class="hidden md:hidden bg-[#e9e6df] border-t border-black/10">
-      <div class="flex flex-col gap-4 px-6 py-6">
-        <a href="/" class="font-medium text-[#1f5f4a]">Home</a>
-        <a href="/" class="font-medium text-[#6b8f84]">About</a>
-        <a href="/" class="font-medium text-[#6b8f84]">Services</a>
-        <a href="/" class="font-medium text-[#6b8f84]">Contact</a>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
 
-        <a href="tel:+919876543210" class="flex items-center gap-2 text-[#6b8f84] pt-2">
-          <i data-lucide="phone" class="w-4 h-4"></i>
-          +91 94321 40363
-        </a>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
 
-        <a href="/contact.html"
-           class="mt-3 text-center py-2 rounded-xl bg-[#d77d22] text-white font-medium">
-          Book Now
-        </a>
-      </div>
+        <li class="nav-item">
+          <a class="nav-link" href="services.html">Services</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+
+        <!-- Call Button -->
+        <li class="nav-item mt-3 mt-lg-0">
+          <a href="tel:+919432140363"
+             class="btn text-white px-4 py-2"
+             style="background:#1f4f45;border-radius:30px;">
+            <i class="bi bi-telephone me-2"></i> Call Now
+          </a>
+        </li>
+
+      </ul>
     </div>
 
   </div>
 </nav>
 
-<!-- Lucide -->
-<script src="https://unpkg.com/lucide@latest"></script>
-<script>
-  lucide.createIcons();
 
-  const btn = document.getElementById("menuBtn");
-  const menu = document.getElementById("mobileMenu");
-  let open = false;
-
-  btn.addEventListener("click", () => {
-    open = !open;
-    menu.classList.toggle("hidden");
-    btn.innerHTML = open
-      ? '<i data-lucide="x" class="w-7 h-7"></i>'
-      : '<i data-lucide="menu" class="w-7 h-7"></i>';
-    lucide.createIcons();
-  });
-</script>
-
-<!-- ================= Brand Introduction Hero ================= -->
-<section class="relative min-h-screen flex items-center justify-center"
-  style="background-image:url('images/hero-sundarban.jpg'); background-size:cover; background-position:center;">
-  
-  <div class="absolute inset-0 bg-black/60"></div>
-
-  <div class="relative z-10 text-center px-4 max-w-4xl fade-up">
-
-    <span class="inline-block px-4 py-2" 
-          style="background-color: rgba(214,139,45,0.2); color: #D68B2D;" 
-          class="rounded-full mb-4">
-      Shiv Durga Travels
-    </span>
-
-    <h2 class="text-4xl md:text-6xl font-bold text-white mb-6">
-      Experience the Sundarbans the Way Locals Know It Best<br>
-      <span style="color:#D68B2D;">Sundarbans</span>
-    </h2>
-
-    <p class="text-lg text-gray-200 mb-8 leading-relaxed">
-      With <strong style="color:#D68B2D;">15+ years of experience</strong>, we craft adventures in the Sundarbans combining safety, comfort, and thrill. From guided boat safaris to eco-friendly stays, every journey is authentic and memorable.
-    </p>
-
-    <div class="flex flex-col sm:flex-row gap-4 justify-center">
-      <a href="#tours"
-        class="px-8 py-4 rounded-xl transition"
-        style="background-color:#D68B2D; color:white;"
-        onmouseover="this.style.backgroundColor='#C57A1F'" 
-        onmouseout="this.style.backgroundColor='#D68B2D'">
-        Explore Tours
-      </a>
-      <a href="#contact"
-        class="px-8 py-4 border rounded-xl transition"
-        style="border-color:#D68B2D; color:white;"
-        onmouseover="this.style.backgroundColor='#D68B2D'; this.style.color='white';"
-        onmouseout="this.style.backgroundColor='transparent'; this.style.color='white';">
-        Get in Touch
-      </a>
+<!-- HERO -->
+<section class="hero d-flex align-items-center text-center text-white">
+  <div class="container hero-content fade-up">
+    <span class="badge rounded-pill mb-4" style="background:rgba(214,139,45,.2);color:#d68b2d">Shiv Durga Travels</span>
+    <h1 class="display-4 fw-bold">Experience the Sundarbans<br><span style="color:#d68b2d">Like a Local</span></h1>
+    <p class="lead mt-4">15+ years of trusted Sundarban travel experience with comfort and safety.</p>
+    <div class="d-flex gap-3 justify-content-center mt-4">
+      <a class="btn btn-warning px-4" href="#">Explore Tours</a>
+      <a class="btn btn-outline-light px-4" href="#">Get in Touch</a>
     </div>
+  </div>
+</section>
 
+<!-- FEATURES -->
+<section class="py-5 feature-strip">
+  <div class="container">
+    <div class="row text-center g-4">
+
+      <div class="col-6 col-md-3">
+        <div class="feature-box">
+          <div class="icon">⭐</div>
+          <h6>Premium Service</h6>
+          <p>Top-rated travel experience</p>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3">
+        <div class="feature-box">
+          <div class="icon">🛡️</div>
+          <h6>Safe & Secure</h6>
+          <p>Trusted & protected journeys</p>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3">
+        <div class="feature-box">
+          <div class="icon">⏰</div>
+          <h6>24/7 Support</h6>
+          <p>Always here to help you</p>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3">
+        <div class="feature-box">
+          <div class="icon">🏆</div>
+          <h6>15+ Years</h6>
+          <p>Experience you can trust</p>
+        </div>
+      </div>
+
+    </div>
   </div>
 </section>
 
 
-<!-- Optional: Fade-up animation -->
-<style>
-  @keyframes fadeUp {
-    0% { opacity: 0; transform: translateY(20px); }
-    100% { opacity: 1; transform: translateY(0); }
-  }
+<section class="py-5 bg-light">
+  <div class="container">
 
-  .fade-up {
-    animation: fadeUp 1s ease forwards;
-  }
-</style>
+    <div class="text-center mx-auto" style="max-width:900px">
 
-
-<!-- ================= Features ================= -->
-<section class="bg-primary py-12">
-  <div class="max-w-7xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-8 text-white">
-    
-    <div class="flex gap-4">
-      <div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center">⭐</div>
-      <div>
-        <h4 class="font-semibold">Premium Service</h4>
-        <p class="text-sm opacity-80">Top-rated experiences</p>
-      </div>
-    </div>
-
-    <div class="flex gap-4">
-      <div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center">🛡️</div>
-      <div>
-        <h4 class="font-semibold">Safe & Secure</h4>
-        <p class="text-sm opacity-80">Your safety first</p>
-      </div>
-    </div>
-
-    <div class="flex gap-4">
-      <div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center">⏰</div>
-      <div>
-        <h4 class="font-semibold">24/7 Support</h4>
-        <p class="text-sm opacity-80">Always available</p>
-      </div>
-    </div>
-
-    <div class="flex gap-4">
-      <div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center">🏆</div>
-      <div>
-        <h4 class="font-semibold">15+ Years</h4>
-        <p class="text-sm opacity-80">Trusted experience</p>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<!-- ================= Brand Introduction ================= -->
-<section class="py-20 bg-gray-50">
-  <div class="max-w-6xl mx-auto px-4">
-
-    <div class="text-center max-w-4xl mx-auto fade-up">
-
-      <span class="text-green-600 font-semibold uppercase tracking-wider">
+      <span class="text-success fw-semibold text-uppercase" style="letter-spacing:1px">
         Shiv Durga Travels
       </span>
 
-      <h2 class="text-4xl md:text-5xl font-extrabold mt-4 text-gray-900 leading-tight">
+      <h2 class="display-5 fw-bold mt-3 text-dark">
         Explore the Sundarbans Like a Local
       </h2>
 
-      <p class="text-gray-700 mt-6 text-lg leading-relaxed">
-        With <strong>15+ years of experience</strong>, we craft adventures in the Sundarbans that combine <span class="text-green-600 font-medium">safety, comfort, and thrill</span>. Thousands of travelers have trusted us for authentic and eco-friendly journeys.
+      <p class="text-secondary mt-4 fs-5">
+        With <strong>15+ years of experience</strong>, we craft adventures in the
+        Sundarbans that combine
+        <span class="text-success fw-medium">safety, comfort, and thrill</span>.
+        Thousands of travelers have trusted us for authentic and eco-friendly journeys.
       </p>
 
       <!-- Features Grid -->
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
-        <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition transform opacity-0 translate-y-10 animate-fadeUp">
-          <div class="text-green-600 text-3xl mb-4">🛶</div>
-          <h3 class="text-xl font-semibold mb-2">Guided Boat Safaris</h3>
-          <p class="text-gray-600">Navigate dense mangroves with experienced guides, spotting wildlife safely.</p>
+      <div class="row g-4 mt-4">
+
+        <div class="col-md-4">
+          <div class="bg-white p-4 rounded-4 shadow-sm h-100 feature-card">
+            <div class="text-success fs-1 mb-3">🛶</div>
+            <h5 class="fw-semibold mb-2">Guided Boat Safaris</h5>
+            <p class="text-muted mb-0">
+              Navigate dense mangroves with experienced guides, spotting wildlife safely.
+            </p>
+          </div>
         </div>
-        <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition transform opacity-0 translate-y-10 animate-fadeUp delay-150">
-          <div class="text-green-600 text-3xl mb-4">🏡</div>
-          <h3 class="text-xl font-semibold mb-2">Eco-Friendly Stays</h3>
-          <p class="text-gray-600">Comfortable, local accommodations designed to blend with nature responsibly.</p>
+
+        <div class="col-md-4">
+          <div class="bg-white p-4 rounded-4 shadow-sm h-100 feature-card">
+            <div class="text-success fs-1 mb-3">🏡</div>
+            <h5 class="fw-semibold mb-2">Eco-Friendly Stays</h5>
+            <p class="text-muted mb-0">
+              Comfortable, local accommodations designed to blend with nature responsibly.
+            </p>
+          </div>
         </div>
-        <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition transform opacity-0 translate-y-10 animate-fadeUp delay-300">
-          <div class="text-green-600 text-3xl mb-4">🌿</div>
-          <h3 class="text-xl font-semibold mb-2">Authentic Experiences</h3>
-          <p class="text-gray-600">From family vacations to corporate retreats, every journey is memorable and responsible.</p>
+
+        <div class="col-md-4">
+          <div class="bg-white p-4 rounded-4 shadow-sm h-100 feature-card">
+            <div class="text-success fs-1 mb-3">🌿</div>
+            <h5 class="fw-semibold mb-2">Authentic Experiences</h5>
+            <p class="text-muted mb-0">
+              From family vacations to corporate retreats, every journey is memorable and responsible.
+            </p>
+          </div>
         </div>
+
       </div>
 
       <!-- Divider -->
-      <div class="flex justify-center mt-12">
-        <span class="w-24 h-[3px] bg-green-600 rounded-full"></span>
+      <div class="d-flex justify-content-center mt-5">
+        <span style="width:96px;height:3px;background:#198754;border-radius:999px"></span>
       </div>
 
     </div>
@@ -255,150 +198,83 @@
   </div>
 </section>
 
-<!-- ================= Animation CSS ================= -->
-<style>
-  @keyframes fadeUp {
-    0% { opacity: 0; transform: translateY(20px); }
-    100% { opacity: 1; transform: translateY(0); }
-  }
 
-  .animate-fadeUp {
-    animation: fadeUp 0.8s ease forwards;
-  }
-
-  .delay-150 { animation-delay: 0.15s; }
-  .delay-300 { animation-delay: 0.3s; }
-</style>
-
-<!-- Optional: Scroll-triggered -->
-<script>
-  const boxes = document.querySelectorAll('.animate-fadeUp');
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if(entry.isIntersecting){
-        entry.target.style.animationPlayState = 'running';
-        observer.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.2 });
-
-  boxes.forEach(box => {
-    box.style.animationPlayState = 'paused';
-    observer.observe(box);
-  });
-</script>
-
-
-
-<!-- ================= Services ================= -->
-<section id="services" class="py-20 bg-gray-50">
-  <div class="max-w-7xl mx-auto px-4">
+<!-- SERVICES -->
+<section id="services" class="py-5 bg-light">
+  <div class="container">
 
     <!-- Section Heading -->
-    <div class="text-center mb-16">
-      <span class="text-green-600 font-medium tracking-wide uppercase">
+    <div class="text-center mb-5">
+      <span class="text-success fw-semibold text-uppercase">
         Our Services
       </span>
-      <h2 class="text-4xl font-bold mt-2 text-gray-900">
+      <h2 class="fw-bold display-6 mt-2 text-dark">
         Unforgettable Sundarban Experiences
       </h2>
-      <p class="text-gray-600 mt-4 max-w-2xl mx-auto leading-relaxed">
+      <p class="text-muted mt-3 mx-auto" style="max-width:700px">
         We provide complete Sundarban travel solutions including boat safaris,
-        comfortable stays, wildlife exploration, and fully customized tour
-        packages designed for families, couples, and corporate groups.
+        eco-friendly stays, wildlife exploration, and fully customized tour
+        packages for families, couples, and corporate groups.
       </p>
     </div>
 
     <!-- Services Grid -->
-    <div class="grid md:grid-cols-3 gap-8">
+    <div class="row g-4">
 
-      <!-- Service Card -->
-      <div
-        class="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2"
-      >
-        <div class="overflow-hidden">
-          <img
-            src="images/boat-tour.jpg"
-            alt="Boat Tours"
-            class="h-56 w-full object-cover transition-transform duration-700 group-hover:scale-110"
-          />
-        </div>
-        <div class="p-6">
-          <h3 class="text-xl font-semibold mb-3 text-gray-900">
-            Boat Tours
-          </h3>
-          <p class="text-gray-600 mb-4 leading-relaxed">
-            Cruise through the serene mangrove waterways with experienced local
-            guides. Our boat tours offer safe, comfortable, and unforgettable
-            views of the Sundarban ecosystem.
-          </p>
-          <a
-            href="#"
-            class="inline-flex items-center text-green-600 font-medium group-hover:gap-2 transition-all"
-          >
-            Learn More
-            <span class="transition-transform group-hover:translate-x-1">→</span>
-          </a>
+      <!-- Card 1 -->
+      <div class="col-md-4">
+        <div class="card h-100 border-0 shadow service-card">
+          <div class="overflow-hidden">
+            <img src="images/boat-tour.jpg" class="card-img-top service-img" alt="Boat Tours">
+          </div>
+          <div class="card-body p-4">
+            <h5 class="fw-semibold mb-3">Boat Tours</h5>
+            <p class="text-muted">
+              Cruise through serene mangrove waterways with experienced local
+              guides ensuring safety, comfort, and unforgettable views.
+            </p>
+            <a href="#" class="text-success fw-medium text-decoration-none">
+              Learn More →
+            </a>
+          </div>
         </div>
       </div>
 
-      <!-- Service Card -->
-      <div
-        class="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2"
-      >
-        <div class="overflow-hidden">
-          <img
-            src="images/hotel-room.jpg"
-            alt="Hotel Stay"
-            class="h-56 w-full object-cover transition-transform duration-700 group-hover:scale-110"
-          />
-        </div>
-        <div class="p-6">
-          <h3 class="text-xl font-semibold mb-3 text-gray-900">
-            Hotel Stay
-          </h3>
-          <p class="text-gray-600 mb-4 leading-relaxed">
-            Stay in eco-friendly resorts surrounded by nature. Enjoy hygienic
-            rooms, delicious local cuisine, and peaceful forest views after a
-            day full of adventure.
-          </p>
-          <a
-            href="#"
-            class="inline-flex items-center text-green-600 font-medium group-hover:gap-2 transition-all"
-          >
-            Learn More
-            <span class="transition-transform group-hover:translate-x-1">→</span>
-          </a>
+      <!-- Card 2 -->
+      <div class="col-md-4">
+        <div class="card h-100 border-0 shadow service-card">
+          <div class="overflow-hidden">
+            <img src="images/hotel-room.jpg" class="card-img-top service-img" alt="Hotel Stay">
+          </div>
+          <div class="card-body p-4">
+            <h5 class="fw-semibold mb-3">Hotel Stay</h5>
+            <p class="text-muted">
+              Relax in eco-friendly resorts surrounded by nature with hygienic
+              rooms, local cuisine, and peaceful forest views.
+            </p>
+            <a href="#" class="text-success fw-medium text-decoration-none">
+              Learn More →
+            </a>
+          </div>
         </div>
       </div>
 
-      <!-- Service Card -->
-      <div
-        class="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2"
-      >
-        <div class="overflow-hidden">
-          <img
-            src="images/wildlife.jpg"
-            alt="Wildlife Safari"
-            class="h-56 w-full object-cover transition-transform duration-700 group-hover:scale-110"
-          />
-        </div>
-        <div class="p-6">
-          <h3 class="text-xl font-semibold mb-3 text-gray-900">
-            Wildlife Safari
-          </h3>
-          <p class="text-gray-600 mb-4 leading-relaxed">
-            Experience thrilling wildlife safaris and spot Royal Bengal Tigers,
-            crocodiles, deer, and rare bird species with the help of expert
-            naturalists.
-          </p>
-          <a
-            href="#"
-            class="inline-flex items-center text-green-600 font-medium group-hover:gap-2 transition-all"
-          >
-            Learn More
-            <span class="transition-transform group-hover:translate-x-1">→</span>
-          </a>
+      <!-- Card 3 -->
+      <div class="col-md-4">
+        <div class="card h-100 border-0 shadow service-card">
+          <div class="overflow-hidden">
+            <img src="images/wildlife.jpg" class="card-img-top service-img" alt="Wildlife Safari">
+          </div>
+          <div class="card-body p-4">
+            <h5 class="fw-semibold mb-3">Wildlife Safari</h5>
+            <p class="text-muted">
+              Experience thrilling safaris and spot Royal Bengal Tigers,
+              crocodiles, deer, and rare birds with expert naturalists.
+            </p>
+            <a href="#" class="text-success fw-medium text-decoration-none">
+              Learn More →
+            </a>
+          </div>
         </div>
       </div>
 
@@ -407,193 +283,220 @@
 </section>
 
 
-<!-- ================= CTA ================= -->
-<section class="relative py-24 text-center"
-  style="background-image:url('images/wildlife.jpg'); background-size:cover; background-position:center;">
+<!-- CTA -->
+<section class="cta-tiger-section position-relative text-center text-white py-5 py-md-5">
+  
+  <!-- Dark Overlay -->
+  <div class="overlay"></div>
 
-  <div class="absolute inset-0 bg-black/70"></div>
+  <!-- Fog -->
+  <div class="fog-layer"></div>
 
-  <div class="relative z-10 max-w-3xl mx-auto px-4 text-white">
-    <h2 class="text-4xl font-bold mb-6">Ready for Your Sundarban Adventure?</h2>
-    <p class="mb-8 text-gray-200">
-      Book your dream trip today with customized packages.
+  <!-- Green Glow -->
+  <div class="green-glow"></div>
+
+  <div class="container position-relative">
+    <!-- <img src="/images/wildlife.jpg" class="tiger-img fade-up mb-3" alt="Tiger"> -->
+
+    <h2 class="display-5 fw-bold fade-up">Witness the Royal Bengal Tiger</h2>
+
+    <p class="mt-3 lead fade-up" style="max-width:700px; margin:auto;">
+      Explore the world’s largest mangrove forest and experience the majestic
+      Royal Bengal Tiger in its natural habitat — safely, comfortably & with expert-guided tours.
     </p>
-    <a href="#contact"
-      class="px-8 py-4 bg-green-600 rounded-xl hover:bg-green-700 transition">
-      Book Your Trip
+
+    <a href="#" class="btn btn-success btn-lg mt-4 fade-up px-4 py-2">
+      Book Your Sundarban Expedition
     </a>
   </div>
 </section>
 
 <!-- Testimonials Section -->
-<section class="bg-[#f4f1ed] py-20">
-  <div class="container mx-auto px-6">
+<section class="py-5" style="background:#f4f1ed;">
+  <div class="container">
 
-    <div class="relative max-w-3xl mx-auto overflow-hidden">
+    <h2 class="text-center fw-bold mb-4" style="color:#1f4f45;">
+      What Our Travellers Say
+    </h2>
 
-      <!-- Slides -->
-      <div id="testimonialTrack" class="flex transition-transform duration-700 ease-in-out">
+    <div id="testimonialCarousel" 
+         class="carousel slide"
+         data-bs-ride="carousel"
+         data-bs-interval="4000">
+
+      <div class="carousel-inner">
 
         <!-- Slide 1 -->
-        <div class="min-w-full text-center px-6">
-          <div class="flex justify-center gap-1 mb-6 text-yellow-500 text-2xl">★★★★★</div>
+        <div class="carousel-item active">
+          <div class="text-center px-4">
+            <img src="images/img_man.png" width="80" class="mb-3 opacity-75">
+            <div class="text-warning fs-3 mb-3">★★★★★</div>
 
-          <blockquote class="text-xl font-serif italic text-[#1f4f45] leading-relaxed">
-            “An incredible experience! The boat tour through the mangroves was magical,
-            and we even spotted a tiger.”
-          </blockquote>
+            <p class="fs-5 fst-italic" style="color:#1f4f45;">
+              “An incredible experience! The mangrove boat tour felt magical,
+              and we even spotted a tiger!”
+            </p>
 
-          <div class="mt-8 flex items-center justify-center gap-4">
-            <div class="w-14 h-14 rounded-full bg-white flex items-center justify-center shadow-lg border border-gray-100">
-  <span class="text-[#1f4f45] font-semibold text-lg">R</span>
-</div>
-
-            <div class="text-left">
-              <p class="font-semibold text-[#1f4f45]">Rajesh Kumar</p>
-              <p class="text-sm text-[#6b8f84]">Family Trip, December 2024</p>
+            <div class="d-flex justify-content-center align-items-center gap-3 mt-4">
+              <div class="rounded-circle shadow-sm border bg-white d-flex justify-content-center align-items-center"
+                   style="width:60px;height:60px;">
+                <span class="fw-bold fs-4" style="color:#1f4f45;">R</span>
+              </div>
+              <div class="text-start">
+                <h6 class="mb-0 fw-bold" style="color:#1f4f45;">Rajesh Kumar</h6>
+                <small class="text-muted">Family Trip · December 2024</small>
+              </div>
             </div>
           </div>
         </div>
 
         <!-- Slide 2 -->
-        <div class="min-w-full text-center px-6">
-          <div class="flex justify-center gap-1 mb-6 text-yellow-500 text-2xl">★★★★★</div>
+        <div class="carousel-item">
+          <div class="text-center px-4">
+            <img src="images/img_woman.png" width="80" class="mb-3 opacity-75">
+            <div class="text-warning fs-3 mb-3">★★★★★</div>
 
-          <blockquote class="text-xl font-serif italic text-[#1f4f45] leading-relaxed">
-            “Everything was perfectly arranged — boat, stay and food.
-            A truly memorable Sundarban experience.”
-          </blockquote>
+            <p class="fs-5 fst-italic" style="color:#1f4f45;">
+              “Everything was perfectly arranged — boat, stay and food.
+              A truly memorable Sundarban experience.”
+            </p>
 
-          <div class="mt-8 flex items-center justify-center gap-4">
-            <div class="w-14 h-14 rounded-full bg-white flex items-center justify-center shadow-lg border border-gray-100">
-  <span class="text-[#1f4f45] font-semibold text-lg">A</span>
-</div>
-
-            <div class="text-left">
-              <p class="font-semibold text-[#1f4f45]">Ananya Sen</p>
-              <p class="text-sm text-[#6b8f84]">Couple Trip, January 2025</p>
+            <div class="d-flex justify-content-center align-items-center gap-3 mt-4">
+              <div class="rounded-circle shadow-sm border bg-white d-flex justify-content-center align-items-center"
+                   style="width:60px;height:60px;">
+                <span class="fw-bold fs-4" style="color:#1f4f45;">A</span>
+              </div>
+              <div class="text-start">
+                <h6 class="mb-0 fw-bold" style="color:#1f4f45;">Ananya Sen</h6>
+                <small class="text-muted">Couple Trip · January 2025</small>
+              </div>
             </div>
           </div>
         </div>
 
         <!-- Slide 3 -->
-        <div class="min-w-full text-center px-6">
-          <div class="flex justify-center gap-1 mb-6 text-yellow-500 text-2xl">★★★★★</div>
+        <div class="carousel-item">
+          <div class="text-center px-4">
+            <img src="images/img_man.png" width="80" class="mb-3 opacity-75">
+            <div class="text-warning fs-3 mb-3">★★★★★</div>
 
-          <blockquote class="text-xl font-serif italic text-[#1f4f45] leading-relaxed">
-            “Very professional team and amazing wildlife spotting.
-            Highly recommended Sundarban tour!”
-          </blockquote>
+            <p class="fs-5 fst-italic" style="color:#1f4f45;">
+              “Very professional team and amazing wildlife spotting.
+              Highly recommended Sundarban tour!”
+            </p>
 
-          <div class="mt-8 flex items-center justify-center gap-4">
-            <div class="w-14 h-14 rounded-full bg-white flex items-center justify-center shadow-lg border border-gray-100">
-  <span class="text-[#1f4f45] font-semibold text-lg">S</span>
-</div>
-
-            <div class="text-left">
-              <p class="font-semibold text-[#1f4f45]">Sourav Das</p>
-              <p class="text-sm text-[#6b8f84]">Group Tour, November 2024</p>
+            <div class="d-flex justify-content-center align-items-center gap-3 mt-4">
+              <div class="rounded-circle shadow-sm border bg-white d-flex justify-content-center align-items-center"
+                   style="width:60px;height:60px;">
+                <span class="fw-bold fs-4" style="color:#1f4f45;">S</span>
+              </div>
+              <div class="text-start">
+                <h6 class="mb-0 fw-bold" style="color:#1f4f45;">Sourav Das</h6>
+                <small class="text-muted">Group Tour · November 2024</small>
+              </div>
             </div>
           </div>
         </div>
 
       </div>
-    </div>
 
+      <!-- Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+
+      <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+
+    </div>
   </div>
 </section>
 
 
-<script>
-  const track = document.getElementById("testimonialTrack");
-  const slides = track.children;
-  let index = 0;
-
-  setInterval(() => {
-    index = (index + 1) % slides.length;
-    track.style.transform = `translateX(-${index * 100}%)`;
-  }, 4000);
-</script>
 
 
 
-<!-- ================= Footer ================= -->
-<footer class="bg-[#1f4f45] text-white">
-  <div class="container mx-auto px-6 py-16">
+<!-- FOOTER -->
+<footer class="text-white pt-5 pb-4" style="background:#1f4f45;">
+  <div class="container">
 
-    <!-- Top Grid -->
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+    <div class="row gy-5">
 
       <!-- Brand -->
-      <div>
-        <div class="flex items-center gap-3 mb-4">
-          <div class="w-12 h-12 rounded-full bg-[#e2aa3b] flex items-center justify-center">
-            <span class="font-bold text-[#1f4f45] text-lg">SD</span>
+      <div class="col-lg-3 col-md-6">
+        <div class="d-flex align-items-center gap-3 mb-3">
+          <div class="rounded-circle d-flex justify-content-center align-items-center"
+               style="width:55px;height:55px;background:#e2aa3b;">
+            <span class="fw-bold text-dark fs-5">SD</span>
           </div>
           <div>
-            <p class="font-semibold text-lg">Shiv Durga</p>
-            <p class="text-sm text-white/70">Travels</p>
+            <h5 class="mb-0 fw-semibold text-white">Shiv Durga</h5>
+            <small style="color:#e2aa3bb0;">Travels</small>
           </div>
         </div>
 
-        <p class="text-white/80 text-sm leading-relaxed mb-6">
+        <p class="small" style="color:#ffffffc9;">
           Your trusted partner for exploring the majestic Sundarbans.
           Experience the wild beauty with our premium boat tours and
           comfortable accommodations.
         </p>
 
         <!-- Social -->
-        <div class="flex gap-3">
-          <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20">
-            <i data-lucide="facebook"></i>
+        <div class="d-flex gap-2 mt-3">
+          <a href="#" class="rounded-circle d-flex align-items-center justify-content-center"
+             style="width:38px;height:38px;background:#ffffff15;color:#e2aa3b;">
+            <i class="bi bi-facebook"></i>
           </a>
-          <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20">
-            <i data-lucide="instagram"></i>
+          <a href="#" class="rounded-circle d-flex align-items-center justify-content-center"
+             style="width:38px;height:38px;background:#ffffff15;color:#e2aa3b;">
+            <i class="bi bi-instagram"></i>
           </a>
-          <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20">
-            <i data-lucide="youtube"></i>
+          <a href="#" class="rounded-circle d-flex align-items-center justify-content-center"
+             style="width:38px;height:38px;background:#ffffff15;color:#e2aa3b;">
+            <i class="bi bi-youtube"></i>
           </a>
         </div>
       </div>
 
       <!-- Quick Links -->
-      <div>
-        <h4 class="font-semibold text-lg mb-5">Quick Links</h4>
-        <ul class="space-y-3 text-white/80 text-sm">
-          <li><a href="/" class="hover:text-white">Home</a></li>
-          <li><a href="/" class="hover:text-white">About Us</a></li>
-          <li><a href="/" class="hover:text-white">Our Services</a></li>
-          <li><a href="/" class="hover:text-white">Contact</a></li>
+      <div class="col-lg-3 col-md-6">
+        <h6 class="fw-semibold mb-3" style="color:#e2aa3b;">Quick Links</h6>
+        <ul class="list-unstyled small">
+          <li class="mb-2"><a href="/" class="text-white-50 text-decoration-none">Home</a></li>
+          <li class="mb-2"><a href="/" class="text-white-50 text-decoration-none">About Us</a></li>
+          <li class="mb-2"><a href="/" class="text-white-50 text-decoration-none">Our Services</a></li>
+          <li class="mb-2"><a href="/" class="text-white-50 text-decoration-none">Contact</a></li>
         </ul>
       </div>
 
       <!-- Services -->
-      <div>
-        <h4 class="font-semibold text-lg mb-5">Our Services</h4>
-        <ul class="space-y-3 text-white/80 text-sm">
-          <li>Boat Tours</li>
-          <li>Hotel Accommodation</li>
-          <li>Wildlife Safari</li>
-          <li>Photography Tours</li>
-          <li>Custom Packages</li>
+      <div class="col-lg-3 col-md-6">
+        <h6 class="fw-semibold mb-3" style="color:#e2aa3b;">Our Services</h6>
+        <ul class="list-unstyled small">
+          <li class="mb-2 text-white-50">Boat Tours</li>
+          <li class="mb-2 text-white-50">Hotel Accommodation</li>
+          <li class="mb-2 text-white-50">Wildlife Safari</li>
+          <li class="mb-2 text-white-50">Photography Tours</li>
+          <li class="mb-2 text-white-50">Custom Packages</li>
         </ul>
       </div>
 
       <!-- Contact -->
-      <div>
-        <h4 class="font-semibold text-lg mb-5">Contact Us</h4>
-        <ul class="space-y-4 text-white/80 text-sm">
-          <li class="flex items-start gap-3">
-            <i data-lucide="map-pin" class="text-[#e2aa3b]"></i>
+      <div class="col-lg-3 col-md-6">
+        <h6 class="fw-semibold mb-3" style="color:#e2aa3b;">Contact Us</h6>
+        <ul class="list-unstyled small text-white-75">
+          <li class="d-flex gap-2 mb-3">
+            <i class="bi bi-geo-alt" style="color:#e2aa3b;"></i>
             <span>Sundarban, South 24 Parganas, West Bengal, India</span>
           </li>
-          <li class="flex items-center gap-3">
-            <i data-lucide="phone" class="text-[#e2aa3b]"></i>
-            <span>+91 94321 40363</span>
+          <li class="d-flex gap-2 mb-3">
+            <i class="bi bi-telephone" style="color:#e2aa3b;"></i>
+            +91 94321 40363
           </li>
-          <li class="flex items-center gap-3">
-            <i data-lucide="mail" class="text-[#e2aa3b]"></i>
-            <span>info@shivdurgatravels.com</span>
+          <li class="d-flex gap-2">
+            <i class="bi bi-envelope" style="color:#e2aa3b;"></i>
+            info@shivdurgatravels.com
           </li>
         </ul>
       </div>
@@ -601,24 +504,76 @@
     </div>
 
     <!-- Divider -->
-    <div class="border-t border-white/15 mt-14 pt-6 flex flex-col md:flex-row justify-between items-center text-white/60 text-sm gap-4">
-      <p>© 2025 Shiv Durga Travels. All rights reserved.</p>
-      <div class="flex gap-6">
-        <a href="#" class="hover:text-white">Privacy Policy</a>
-        <a href="#" class="hover:text-white">Terms of Service</a>
+    <hr class="border-light mt-4" style="opacity:.15;">
+
+    <div class="d-flex flex-column flex-md-row justify-content-between align-items-center small text-white-50">
+      <p class="mb-2 mb-md-0">© 2025 Shiv Durga Travels. All rights reserved.</p>
+
+      <div class="d-flex gap-3 mb-2 mb-md-0">
+        <a href="#" class="text-white-50 text-decoration-none">Privacy Policy</a>
+        <a href="#" class="text-white-50 text-decoration-none">Terms of Service</a>
       </div>
+
+      <p class="mb-0">
+        Designed & Developed by
+        <a href="https://asyncinfotech.com/" target="_blank"
+           class="text-decoration-none fw-semibold"
+           style="color:#e2aa3b;">
+          Async Infotech
+        </a>
+      </p>
     </div>
 
   </div>
 </footer>
 
-<!-- Lucide Icons -->
-<script src="https://unpkg.com/lucide@latest"></script>
+
+<!-- Floating WhatsApp Button -->
+<a href="https://wa.me/919432140363" target="_blank" class="whatsapp-float">
+  <i class="bi bi-whatsapp"></i>
+</a>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script>
-  lucide.createIcons();
+  const observer = new IntersectionObserver(
+    entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        }
+      });
+    },
+    { threshold: 0.4 }
+  );
+
+/*Testimonial*/
+// let index = 0;
+// const slider = document.getElementById("testimonialSlider");
+// const dots = document.querySelectorAll(".dot");
+
+// function moveSlide() {
+//   index = (index + 1) % 3;
+//   slider.style.transform = `translateX(-${index * 100}%)`;
+
+//   dots.forEach(d => d.classList.remove("active"));
+//   dots[index].classList.add("active");
+// }
+
+// setInterval(moveSlide, 5500);
+
+ const links = document.querySelectorAll(".nav-link");
+  links.forEach(link => {
+    if (link.href === window.location.href) {
+      link.classList.add("active");
+      link.style.color = "#1f4f45";
+      link.style.fontWeight = "600";
+    }
+  });
+
+
+  document.querySelectorAll(".fade-up").forEach(el => observer.observe(el));
 </script>
-
-
 
 
 

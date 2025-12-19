@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sundarbans Tour</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons CDN -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+
+  <!-- Custom CSS -->
+   <link href="asstes/css/style.css" rel="stylesheet">
+   
+
+  
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top shadow-sm" style="background:#e9e6df;">
+  <div class="container py-2">
+
+    <!-- Logo -->
+    <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+      <div class="rounded-circle d-flex align-items-center justify-content-center"
+           style="width:45px;height:45px;background:#1f4f45;color:#fff;font-weight:600;">
+        SD
+      </div>
+      <div>
+        <strong style="color:#1f4f45;font-size:18px;">Shiv Durga</strong><br>
+        <small class="text-muted" style="margin-top:-5px;display:block;">Travels</small>
+      </div>
+    </a>
+
+    <!-- Mobile Toggle -->
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+      <i class="bi bi-list" style="font-size:28px;color:#1f4f45;"></i>
+    </button>
+
+    <!-- Nav Menu -->
+    <div id="mainNav" class="collapse navbar-collapse justify-content-end">
+      <ul class="navbar-nav align-items-lg-center gap-lg-4">
+
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="services.html">Services</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+
+        <!-- Call Button -->
+        <li class="nav-item mt-3 mt-lg-0">
+          <a href="tel:+919432140363"
+             class="btn text-white px-4 py-2"
+             style="background:#1f4f45;border-radius:30px;">
+            <i class="bi bi-telephone me-2"></i> Call Now
+          </a>
+        </li>
+
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+<!--HERO-->
+<!-- ================= Premium Services Hero ================= -->
+
+<section class="py-5 text-center position-relative overflow-hidden parallax"
+         style="background:url('images/hero-sundarban.jpg') center/cover no-repeat;">
+
+  <div class="position-absolute inset-0" 
+       style="background:rgba(0,0,0,0.55);"></div>
+
+  <div class="container position-relative py-5 animate-fade">
+    <h1 class="fw-bold display-4 text-white">
+       Crafted for <span class="text-success glow-text">Adventure</span>
+    </h1>
+
+    <p class="text-light mt-3 fs-5">
+     From thrilling boat safaris to eco-friendly stays,  
+      experience the best of Sundarbans—comfortably & safely.
+    </p>
+
+    <!-- <img src="images/tiger-icon.png" width="90" class="mt-3 opacity-75"> -->
+  </div>
+</section>
+
+<!-- ================= Services Details (Bootstrap Glassmorphism with WhatsApp Booking) ================= -->
+<section class="py-5" style="background: linear-gradient(to bottom, #ecfdf5, #ffffff); position: relative; overflow: hidden;">
+  <div class="container">
+
+    <!-- 1. Boat Tours -->
+    <div id="boat-tours" class="row align-items-center mb-5 p-4 rounded-4 shadow-lg border" style="background: rgba(255,255,255,0.4); backdrop-filter: blur(10px); border-color: rgba(255,255,255,0.3);">
+      
+      <!-- Image -->
+      <div class="col-lg-4 text-center mb-3 mb-lg-0">
+        <div class="rounded-4 shadow-lg mx-auto" style="width: 160px; height: 160px; overflow: hidden; animation: pulse-slow 5s infinite ease-in-out;">
+          <img src="images/boat-tour.jpg" alt="Boat Tour" class="img-fluid h-100 w-100 object-fit-cover">
+        </div>
+      </div>
+
+      <!-- Content -->
+      <div class="col-lg-8">
+        <span class="text-success fw-medium text-uppercase">Explore the Waterways</span>
+        <h2 class="fw-bold mt-2 mb-3">Boat Tours</h2>
+        <p class="text-muted mb-3">
+          Experience Sundarban’s waterways on our personal boats—fully operated by trained captains from our own team.
+        </p>
+
+        <div class="row row-cols-2 g-2 mb-3 small">
+          <div>✅ Personal boats (Our Own Boats)</div>
+          <div>✅ AC / Non-AC Options</div>
+          <div>✅ Full & Half-day Tours</div>
+          <div>✅ Refreshments Included</div>
+          <div>✅ Photography Support</div>
+          <div>✅ Binoculars Provided</div>
+        </div>
+
+        <div class="d-flex gap-3 text-muted mb-3">
+          <span>⏰ 4–8 hours</span>
+          <span>👥 2–15 people</span>
+        </div>
+
+        <div class="d-flex justify-content-between align-items-center border-top pt-3">
+          <span class="h4 fw-bold text-dark">Starting ₹2,500/person</span>
+          <a href="https://wa.me/919432140363?text=Hi,%20I%20want%20to%20book%20the%20Boat%20Tours%20package." 
+             target="_blank" class="btn btn-success btn-lg shadow">Book via WhatsApp</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2. Resort Accommodation -->
+    <div id="accommodation" class="row align-items-center mb-5 p-4 rounded-4 shadow-lg border flex-lg-row-reverse" style="background: rgba(255,255,255,0.4); backdrop-filter: blur(10px); border-color: rgba(255,255,255,0.3);">
+      
+      <!-- Image -->
+      <div class="col-lg-4 text-center mb-3 mb-lg-0">
+        <div class="rounded-4 shadow-lg mx-auto" style="width: 160px; height: 160px; overflow: hidden; animation: pulse-slow 5s infinite ease-in-out;">
+          <img src="images/hotel-room.jpg" alt="Resort Accommodation" class="img-fluid h-100 w-100 object-fit-cover">
+        </div>
+      </div>
+
+      <!-- Content -->
+      <div class="col-lg-8">
+        <span class="text-success fw-medium text-uppercase">Comfort in the Wild</span>
+        <h2 class="fw-bold mt-2 mb-3">Resort Accommodation</h2>
+        <p class="text-muted mb-3">
+          Stay at our own Sundarban resort—immersed in nature but loaded with modern amenities.
+        </p>
+
+        <div class="row row-cols-2 g-2 mb-3 small">
+          <div>✅ Scenic Rooms</div>
+          <div>✅ Bengali Cuisine</div>
+          <div>✅ 24/7 Hot Water</div>
+          <div>✅ Free Wi-Fi</div>
+          <div>✅ Room Service</div>
+          <div>✅ Secure Parking</div>
+        </div>
+
+        <div class="d-flex gap-3 text-muted mb-3">
+          <span>⏰ Per Night</span>
+          <span>👥 1–4 per room</span>
+        </div>
+
+        <div class="d-flex justify-content-between align-items-center border-top pt-3">
+          <span class="h4 fw-bold text-dark">Starting ₹3,000/night</span>
+          <a href="https://wa.me/919432140363?text=Hi,%20I%20want%20to%20book%20the%20Resort%20Accommodation%20package." 
+             target="_blank" class="btn btn-success btn-lg shadow">Book via WhatsApp</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3. Wildlife Safari -->
+    <div id="wildlife-safari" class="row align-items-center mb-5 p-4 rounded-4 shadow-lg border" style="background: rgba(255,255,255,0.4); backdrop-filter: blur(10px); border-color: rgba(255,255,255,0.3);">
+      
+      <!-- Image -->
+      <div class="col-lg-4 text-center mb-3 mb-lg-0">
+        <div class="rounded-4 shadow-lg mx-auto" style="width: 160px; height: 160px; overflow: hidden; animation: pulse-slow 5s infinite ease-in-out;">
+          <img src="images/wildlife.jpg" alt="Wildlife Safari" class="img-fluid h-100 w-100 object-fit-cover">
+        </div>
+      </div>
+
+      <!-- Content -->
+      <div class="col-lg-8">
+        <span class="text-success fw-medium text-uppercase">Meet the Royals</span>
+        <h2 class="fw-bold mt-2 mb-3">Wildlife Safari</h2>
+        <p class="text-muted mb-3">
+          Explore Sundarban wildlife with the safest routes and expert guides trained by our own local team.
+        </p>
+
+        <div class="row row-cols-2 g-2 mb-3 small">
+          <div>✅ Expert Guides</div>
+          <div>✅ Tiger Tracking</div>
+          <div>✅ Bird Watching</div>
+          <div>✅ Night Safari</div>
+          <div>✅ Camera Traps</div>
+          <div>✅ Small Groups</div>
+        </div>
+
+        <div class="d-flex gap-3 text-muted mb-3">
+          <span>⏰ Full Day</span>
+          <span>👥 4–10 people</span>
+        </div>
+
+        <div class="d-flex justify-content-between align-items-center border-top pt-3">
+          <span class="h4 fw-bold text-dark">Starting ₹4,500/person</span>
+          <a href="https://wa.me/919432140363?text=Hi,%20I%20want%20to%20book%20the%20Wildlife%20Safari%20package." 
+             target="_blank" class="btn btn-success btn-lg shadow">Book via WhatsApp</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Slow Pulse Animation -->
+<style>
+  @keyframes pulse-slow {
+    0% { transform: scale(1); opacity: 0.95; }
+    50% { transform: scale(1.05); opacity: 1; }
+    100% { transform: scale(1); opacity: 0.95; }
+  }
+  [style*="animation: pulse-slow"] {
+    animation: pulse-slow 5s infinite ease-in-out;
+  }
+  .object-fit-cover {
+    object-fit: cover;
+  }
+</style>
+
+
+<!-- ================= Tour Packages (Premium Bootstrap + WhatsApp Booking) ================= -->
+<section class="py-5" style="background-color: #f3f4f6;">
+  <div class="container">
+
+    <!-- Section Heading -->
+    <div class="text-center mb-5">
+      <span class="text-success fw-medium">Tour Packages</span>
+      <h2 class="fw-bold mt-2">Choose Your Adventure</h2>
+      <p class="text-muted mt-2">Pick a package or contact us for a custom plan.</p>
+    </div>
+
+    <div class="row g-4">
+
+      <!-- Day Trip -->
+      <div class="col-md-4">
+        <div class="card shadow-sm h-100 border-0 rounded-4" style="backdrop-filter: blur(10px); background: rgba(255,255,255,0.4);">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title fw-bold">Day Trip</h5>
+            <p class="text-muted mb-2">1 Day</p>
+            <div class="h3 text-success fw-bold mb-3">₹2,999</div>
+            <ul class="list-unstyled mb-4 flex-grow-1">
+              <li>✅ Boat tour</li>
+              <li>✅ Lunch included</li>
+              <li>✅ Guide service</li>
+              <li>✅ Entry permits</li>
+            </ul>
+            <a href="https://wa.me/919432140363?text=Hi%2C%20I%20want%20to%20book%20the%20Day%20Trip%20package." 
+               target="_blank" class="btn btn-success w-100 mt-auto">
+              Book via WhatsApp →
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Weekend Escape (Most Popular) -->
+      <div class="col-md-4">
+        <div class="card shadow-lg h-100 border-success border-2 rounded-4 position-relative" style="backdrop-filter: blur(10px); background: rgba(255,255,255,0.4);">
+          <span class="badge bg-success position-absolute top-0 start-50 translate-middle" style="font-size: 0.8rem; padding: 0.5rem 1rem;">
+            Most Popular
+          </span>
+          <div class="card-body d-flex flex-column mt-4">
+            <h5 class="card-title fw-bold">Weekend Escape</h5>
+            <p class="text-muted mb-2">2 Days / 1 Night</p>
+            <div class="h3 text-success fw-bold mb-3">₹6,999</div>
+            <ul class="list-unstyled mb-4 flex-grow-1">
+              <li>✅ Hotel stay</li>
+              <li>✅ 2 meals/day</li>
+              <li>✅ Wildlife safari</li>
+              <li>✅ Boat tours</li>
+            </ul>
+            <a href="https://wa.me/919432140363?text=Hi%2C%20I%20want%20to%20book%20the%20Weekend%20Escape%20package." 
+               target="_blank" class="btn btn-success w-100 mt-auto">
+              Book via WhatsApp →
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Complete Adventure -->
+      <div class="col-md-4">
+        <div class="card shadow-sm h-100 border-0 rounded-4" style="backdrop-filter: blur(10px); background: rgba(255,255,255,0.4);">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title fw-bold">Complete Adventure</h5>
+            <p class="text-muted mb-2">3 Days / 2 Nights</p>
+            <div class="h3 text-success fw-bold mb-3">₹11,999</div>
+            <ul class="list-unstyled mb-4 flex-grow-1">
+              <li>✅ Extended tours</li>
+              <li>✅ Photography tour</li>
+              <li>✅ Village visit</li>
+              <li>✅ All inclusions</li>
+            </ul>
+            <a href="https://wa.me/919432140363?text=Hi%2C%20I%20want%20to%20book%20the%20Complete%20Adventure%20package." 
+               target="_blank" class="btn btn-success w-100 mt-auto">
+              Book via WhatsApp →
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<!-- FOOTER -->
+<footer class="text-white pt-5 pb-4" style="background:#1f4f45;">
+  <div class="container">
+
+    <div class="row gy-5">
+
+      <!-- Brand -->
+      <div class="col-lg-3 col-md-6">
+        <div class="d-flex align-items-center gap-3 mb-3">
+          <div class="rounded-circle d-flex justify-content-center align-items-center"
+               style="width:55px;height:55px;background:#e2aa3b;">
+            <span class="fw-bold text-dark fs-5">SD</span>
+          </div>
+          <div>
+            <h5 class="mb-0 fw-semibold text-white">Shiv Durga</h5>
+            <small style="color:#e2aa3bb0;">Travels</small>
+          </div>
+        </div>
+
+        <p class="small" style="color:#ffffffc9;">
+          Your trusted partner for exploring the majestic Sundarbans.
+          Experience the wild beauty with our premium boat tours and
+          comfortable accommodations.
+        </p>
+
+        <!-- Social -->
+        <div class="d-flex gap-2 mt-3">
+          <a href="#" class="rounded-circle d-flex align-items-center justify-content-center"
+             style="width:38px;height:38px;background:#ffffff15;color:#e2aa3b;">
+            <i class="bi bi-facebook"></i>
+          </a>
+          <a href="#" class="rounded-circle d-flex align-items-center justify-content-center"
+             style="width:38px;height:38px;background:#ffffff15;color:#e2aa3b;">
+            <i class="bi bi-instagram"></i>
+          </a>
+          <a href="#" class="rounded-circle d-flex align-items-center justify-content-center"
+             style="width:38px;height:38px;background:#ffffff15;color:#e2aa3b;">
+            <i class="bi bi-youtube"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-lg-3 col-md-6">
+        <h6 class="fw-semibold mb-3" style="color:#e2aa3b;">Quick Links</h6>
+        <ul class="list-unstyled small">
+          <li class="mb-2"><a href="/" class="text-white-50 text-decoration-none">Home</a></li>
+          <li class="mb-2"><a href="/" class="text-white-50 text-decoration-none">About Us</a></li>
+          <li class="mb-2"><a href="/" class="text-white-50 text-decoration-none">Our Services</a></li>
+          <li class="mb-2"><a href="/" class="text-white-50 text-decoration-none">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Services -->
+      <div class="col-lg-3 col-md-6">
+        <h6 class="fw-semibold mb-3" style="color:#e2aa3b;">Our Services</h6>
+        <ul class="list-unstyled small">
+          <li class="mb-2 text-white-50">Boat Tours</li>
+          <li class="mb-2 text-white-50">Hotel Accommodation</li>
+          <li class="mb-2 text-white-50">Wildlife Safari</li>
+          <li class="mb-2 text-white-50">Photography Tours</li>
+          <li class="mb-2 text-white-50">Custom Packages</li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="col-lg-3 col-md-6">
+        <h6 class="fw-semibold mb-3" style="color:#e2aa3b;">Contact Us</h6>
+        <ul class="list-unstyled small text-white-75">
+          <li class="d-flex gap-2 mb-3">
+            <i class="bi bi-geo-alt" style="color:#e2aa3b;"></i>
+            <span>Sundarban, South 24 Parganas, West Bengal, India</span>
+          </li>
+          <li class="d-flex gap-2 mb-3">
+            <i class="bi bi-telephone" style="color:#e2aa3b;"></i>
+            +91 94321 40363
+          </li>
+          <li class="d-flex gap-2">
+            <i class="bi bi-envelope" style="color:#e2aa3b;"></i>
+            info@shivdurgatravels.com
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Divider -->
+    <hr class="border-light mt-4" style="opacity:.15;">
+
+    <div class="d-flex flex-column flex-md-row justify-content-between align-items-center small text-white-50">
+      <p class="mb-2 mb-md-0">© 2025 Shiv Durga Travels. All rights reserved.</p>
+
+      <div class="d-flex gap-3 mb-2 mb-md-0">
+        <a href="#" class="text-white-50 text-decoration-none">Privacy Policy</a>
+        <a href="#" class="text-white-50 text-decoration-none">Terms of Service</a>
+      </div>
+
+      <p class="mb-0">
+        Designed & Developed by
+        <a href="https://asyncinfotech.com/" target="_blank"
+           class="text-decoration-none fw-semibold"
+           style="color:#e2aa3b;">
+          Async Infotech
+        </a>
+      </p>
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+
+<!-- Floating WhatsApp Button -->
+<a href="https://wa.me/919432140363" target="_blank" class="whatsapp-float">
+  <i class="bi bi-whatsapp"></i>
+</a>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  const observer = new IntersectionObserver(
+    entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        }
+      });
+    },
+    { threshold: 0.4 }
+  );
+
+/*Testimonial*/
+// let index = 0;
+// const slider = document.getElementById("testimonialSlider");
+// const dots = document.querySelectorAll(".dot");
+
+// function moveSlide() {
+//   index = (index + 1) % 3;
+//   slider.style.transform = `translateX(-${index * 100}%)`;
+
+//   dots.forEach(d => d.classList.remove("active"));
+//   dots[index].classList.add("active");
+// }
+
+// setInterval(moveSlide, 5500);
+
+const links = document.querySelectorAll(".nav-link");
+  links.forEach(link => {
+    if (link.href === window.location.href) {
+      link.classList.add("active");
+      link.style.color = "#1f4f45";
+      link.style.fontWeight = "600";
+    }
+  });
+
+  document.querySelectorAll(".fade-up").forEach(el => observer.observe(el));
+</script>
+
+
+
+</body>
+</html>
