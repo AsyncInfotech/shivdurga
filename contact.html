@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sundarbans Tour</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons CDN -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+
+  <!-- Custom CSS -->
+   <link href="asstes/css/style.css" rel="stylesheet">
+   
+<!-- WhatsApp Form Script -->
+<script>
+document.getElementById('contactForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  const name = encodeURIComponent(document.getElementById('name').value);
+  const email = encodeURIComponent(document.getElementById('email').value);
+  const phone = encodeURIComponent(document.getElementById('phone').value);
+  const subject = encodeURIComponent(document.getElementById('subject').value);
+  const message = encodeURIComponent(document.getElementById('message').value);
+
+  const whatsappMessage = `*New Contact Form Submission*%0A%0A*Name:* ${name}%0A*Email:* ${email}%0A*Phone:* ${phone}%0A*Subject:* ${subject}%0A*Message:* ${message}`;
+  const whatsappURL = `https://wa.me/919432140363?text=${whatsappMessage}`;
+  window.open(whatsappURL, '_blank');
+});
+</script>
+
+<style>
+/* Glassmorphism cards */
+.glass-card {
+  backdrop-filter: blur(10px);
+  background: rgba(255,255,255,0.6);
+  border: 1px solid rgba(255,255,255,0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.glass-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+}
+
+/* Gradient WhatsApp button */
+.btn-gradient {
+  background: linear-gradient(90deg, #22c55e, #16a34a);
+}
+.btn-gradient:hover {
+  background: linear-gradient(90deg, #16a34a, #22c55e);
+}
+
+/* Icon wrapper */
+.icon-wrapper {
+  width:50px; height:50px;
+  display:flex; align-items:center; justify-content:center;
+  border-radius:50%;
+  background: rgba(34,197,94,0.15);
+  margin:0 auto;
+}
+</style>
+  
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top shadow-sm" style="background:#e9e6df;">
+  <div class="container py-2">
+
+    <!-- Logo -->
+    <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+      <div class="rounded-circle d-flex align-items-center justify-content-center"
+           style="width:45px;height:45px;background:#1f4f45;color:#fff;font-weight:600;">
+        SD
+      </div>
+      <div>
+        <strong style="color:#1f4f45;font-size:18px;">Shiv Durga</strong><br>
+        <small class="text-muted" style="margin-top:-5px;display:block;">Travels</small>
+      </div>
+    </a>
+
+    <!-- Mobile Toggle -->
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+      <i class="bi bi-list" style="font-size:28px;color:#1f4f45;"></i>
+    </button>
+
+    <!-- Nav Menu -->
+    <div id="mainNav" class="collapse navbar-collapse justify-content-end">
+      <ul class="navbar-nav align-items-lg-center gap-lg-4">
+
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="services.html">Services</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+
+        <!-- Call Button -->
+        <li class="nav-item mt-3 mt-lg-0">
+          <a href="tel:+919432140363"
+             class="btn text-white px-4 py-2"
+             style="background:#1f4f45;border-radius:30px;">
+            <i class="bi bi-telephone me-2"></i> Call Now
+          </a>
+        </li>
+
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+<!-- ================= Contact Section (Premium Bootstrap + WhatsApp) ================= -->
+<section class="position-relative py-5" style="background: linear-gradient(to bottom, #e6f5f0, #ffffff);">
+
+  <!-- Hero Section -->
+  <div class="container text-center mb-5 position-relative" style="z-index:2;">
+    <span class="d-inline-block px-3 py-1 rounded-pill bg-success bg-opacity-10 text-success fw-medium mb-3">Contact Us</span>
+    <h1 class="display-4 fw-bold">Let's Plan Your <span class="text-success">Adventure</span></h1>
+    <p class="lead text-muted">Have questions or ready to book? Reach out and our friendly team will assist you.</p>
+  </div>
+
+  <!-- Contact Info Cards -->
+  <div class="container mb-5">
+    <div class="row g-4 justify-content-center">
+
+      <div class="col-6 col-md-3">
+        <div class="card shadow-lg rounded-4 p-4 text-center glass-card">
+          <div class="icon-wrapper mb-3">
+            <i class="bi bi-telephone-fill text-success fs-5"></i>
+          </div>
+          <h5 class="fw-semibold mb-1">Phone</h5>
+          <a href="tel:+919876543210" class="d-block text-muted">+91 98765 43210</a>
+          <a href="tel:+919876543211" class="d-block text-muted">+91 98765 43211</a>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3">
+        <div class="card shadow-lg rounded-4 p-4 text-center glass-card">
+          <div class="icon-wrapper mb-3">
+            <i class="bi bi-envelope-fill text-success fs-5"></i>
+          </div>
+          <h5 class="fw-semibold mb-1">Email</h5>
+          <a href="mailto:info@shivdurgatravels.com" class="d-block text-muted">info@shivdurgatravels.com</a>
+          <a href="mailto:bookings@shivdurgatravels.com" class="d-block text-muted">bookings@shivdurgatravels.com</a>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3">
+        <div class="card shadow-lg rounded-4 p-4 text-center glass-card">
+          <div class="icon-wrapper mb-3">
+            <i class="bi bi-geo-alt-fill text-success fs-5"></i>
+          </div>
+          <h5 class="fw-semibold mb-1">Address</h5>
+          <p class="mb-0 text-muted">Sundarban, South 24 Parganas<br>West Bengal, India – 743370</p>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3">
+        <div class="card shadow-lg rounded-4 p-4 text-center glass-card">
+          <div class="icon-wrapper mb-3">
+            <i class="bi bi-clock-fill text-success fs-5"></i>
+          </div>
+          <h5 class="fw-semibold mb-1">Working Hours</h5>
+          <p class="mb-0 text-muted">Mon–Sat: 8 AM – 8 PM<br>Sun: 9 AM – 6 PM</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Contact Form + Map -->
+  <div class="container">
+    <div class="row g-5 align-items-start">
+
+      <!-- Form -->
+      <div class="col-lg-6">
+        <div class="card shadow-lg rounded-4 p-4 glass-card">
+          <h2 class="fw-bold mb-4">Send Us a Message</h2>
+          <form id="contactForm">
+            <div class="row g-3 mb-3">
+              <div class="col-sm-6">
+                <input type="text" id="name" class="form-control" placeholder="Your Name *" required>
+              </div>
+              <div class="col-sm-6">
+                <input type="email" id="email" class="form-control" placeholder="Email Address *" required>
+              </div>
+            </div>
+            <div class="row g-3 mb-3">
+              <div class="col-sm-6">
+                <input type="tel" id="phone" class="form-control" placeholder="Phone Number">
+              </div>
+              <div class="col-sm-6">
+                <input type="text" id="subject" class="form-control" placeholder="Subject *" required>
+              </div>
+            </div>
+            <div class="mb-3">
+              <textarea id="message" rows="5" class="form-control" placeholder="Your Message *" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-lg w-100 btn-gradient text-white fw-bold">Send via WhatsApp</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Map + Info -->
+      <div class="col-lg-6 d-flex flex-column gap-4">
+        <div class="overflow-hidden rounded-4 shadow-lg" style="height:450px;">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3680.233453054458!2d88.38559767508227!3d22.719562679387366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f89b5230d36557%3A0xf59a164d94c94704!2sAsync%20Infotech!5e0!3m2!1sen!2sin!4v1758370844813!5m2!1sen!2sin"
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div class="p-4 rounded-4 shadow-lg glass-card" style="background: rgba(22,163,74,0.85); color:#fff;">
+          <h5 class="fw-semibold mb-3">Why Book with Us?</h5>
+          <ul class="small mb-0">
+            <li>✔ 15+ years of trusted experience</li>
+            <li>✔ Personal boats & comfortable stays</li>
+            <li>✔ Expert local guides</li>
+            <li>✔ Customizable tour packages</li>
+            <li>✔ 24/7 customer support</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+
+
+
+
+
+
+<!-- FOOTER -->
+<footer class="text-white pt-5 pb-4" style="background:#1f4f45;">
+  <div class="container">
+
+    <div class="row gy-5">
+
+      <!-- Brand -->
+      <div class="col-lg-3 col-md-6">
+        <div class="d-flex align-items-center gap-3 mb-3">
+          <div class="rounded-circle d-flex justify-content-center align-items-center"
+               style="width:55px;height:55px;background:#e2aa3b;">
+            <span class="fw-bold text-dark fs-5">SD</span>
+          </div>
+          <div>
+            <h5 class="mb-0 fw-semibold text-white">Shiv Durga</h5>
+            <small style="color:#e2aa3bb0;">Travels</small>
+          </div>
+        </div>
+
+        <p class="small" style="color:#ffffffc9;">
+          Your trusted partner for exploring the majestic Sundarbans.
+          Experience the wild beauty with our premium boat tours and
+          comfortable accommodations.
+        </p>
+
+        <!-- Social -->
+        <div class="d-flex gap-2 mt-3">
+          <a href="#" class="rounded-circle d-flex align-items-center justify-content-center"
+             style="width:38px;height:38px;background:#ffffff15;color:#e2aa3b;">
+            <i class="bi bi-facebook"></i>
+          </a>
+          <a href="#" class="rounded-circle d-flex align-items-center justify-content-center"
+             style="width:38px;height:38px;background:#ffffff15;color:#e2aa3b;">
+            <i class="bi bi-instagram"></i>
+          </a>
+          <a href="#" class="rounded-circle d-flex align-items-center justify-content-center"
+             style="width:38px;height:38px;background:#ffffff15;color:#e2aa3b;">
+            <i class="bi bi-youtube"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-lg-3 col-md-6">
+        <h6 class="fw-semibold mb-3" style="color:#e2aa3b;">Quick Links</h6>
+        <ul class="list-unstyled small">
+          <li class="mb-2"><a href="/" class="text-white-50 text-decoration-none">Home</a></li>
+          <li class="mb-2"><a href="/" class="text-white-50 text-decoration-none">About Us</a></li>
+          <li class="mb-2"><a href="/" class="text-white-50 text-decoration-none">Our Services</a></li>
+          <li class="mb-2"><a href="/" class="text-white-50 text-decoration-none">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Services -->
+      <div class="col-lg-3 col-md-6">
+        <h6 class="fw-semibold mb-3" style="color:#e2aa3b;">Our Services</h6>
+        <ul class="list-unstyled small">
+          <li class="mb-2 text-white-50">Boat Tours</li>
+          <li class="mb-2 text-white-50">Hotel Accommodation</li>
+          <li class="mb-2 text-white-50">Wildlife Safari</li>
+          <li class="mb-2 text-white-50">Photography Tours</li>
+          <li class="mb-2 text-white-50">Custom Packages</li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="col-lg-3 col-md-6">
+        <h6 class="fw-semibold mb-3" style="color:#e2aa3b;">Contact Us</h6>
+        <ul class="list-unstyled small text-white-75">
+          <li class="d-flex gap-2 mb-3">
+            <i class="bi bi-geo-alt" style="color:#e2aa3b;"></i>
+            <span>Sundarban, South 24 Parganas, West Bengal, India</span>
+          </li>
+          <li class="d-flex gap-2 mb-3">
+            <i class="bi bi-telephone" style="color:#e2aa3b;"></i>
+            +91 94321 40363
+          </li>
+          <li class="d-flex gap-2">
+            <i class="bi bi-envelope" style="color:#e2aa3b;"></i>
+            info@shivdurgatravels.com
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Divider -->
+    <hr class="border-light mt-4" style="opacity:.15;">
+
+    <div class="d-flex flex-column flex-md-row justify-content-between align-items-center small text-white-50">
+      <p class="mb-2 mb-md-0">© 2025 Shiv Durga Travels. All rights reserved.</p>
+
+      <div class="d-flex gap-3 mb-2 mb-md-0">
+        <a href="#" class="text-white-50 text-decoration-none">Privacy Policy</a>
+        <a href="#" class="text-white-50 text-decoration-none">Terms of Service</a>
+      </div>
+
+      <p class="mb-0">
+        Designed & Developed by
+        <a href="https://asyncinfotech.com/" target="_blank"
+           class="text-decoration-none fw-semibold"
+           style="color:#e2aa3b;">
+          Async Infotech
+        </a>
+      </p>
+    </div>
+
+  </div>
+</footer>
+
+
+<!-- Floating WhatsApp Button -->
+<a href="https://wa.me/919432140363" target="_blank" class="whatsapp-float">
+  <i class="bi bi-whatsapp"></i>
+</a>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  const observer = new IntersectionObserver(
+    entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        }
+      });
+    },
+    { threshold: 0.4 }
+  );
+
+/*Testimonial*/
+// let index = 0;
+// const slider = document.getElementById("testimonialSlider");
+// const dots = document.querySelectorAll(".dot");
+
+// function moveSlide() {
+//   index = (index + 1) % 3;
+//   slider.style.transform = `translateX(-${index * 100}%)`;
+
+//   dots.forEach(d => d.classList.remove("active"));
+//   dots[index].classList.add("active");
+// }
+
+// setInterval(moveSlide, 5500);
+
+const links = document.querySelectorAll(".nav-link");
+  links.forEach(link => {
+    if (link.href === window.location.href) {
+      link.classList.add("active");
+      link.style.color = "#1f4f45";
+      link.style.fontWeight = "600";
+    }
+  });
+
+  document.querySelectorAll(".fade-up").forEach(el => observer.observe(el));
+</script>
+
+
+
+</body>
+</html>
