@@ -14,54 +14,10 @@
 
   <!-- Custom CSS -->
    <link href="asstes/css/style.css" rel="stylesheet">
-   
-<!-- WhatsApp Form Script -->
-<script>
-document.getElementById('contactForm').addEventListener('submit', function(e){
-  e.preventDefault();
-  const name = encodeURIComponent(document.getElementById('name').value);
-  const email = encodeURIComponent(document.getElementById('email').value);
-  const phone = encodeURIComponent(document.getElementById('phone').value);
-  const subject = encodeURIComponent(document.getElementById('subject').value);
-  const message = encodeURIComponent(document.getElementById('message').value);
+  <style>
+    
 
-  const whatsappMessage = `*New Contact Form Submission*%0A%0A*Name:* ${name}%0A*Email:* ${email}%0A*Phone:* ${phone}%0A*Subject:* ${subject}%0A*Message:* ${message}`;
-  const whatsappURL = `https://wa.me/919825282571?text=${whatsappMessage}`;
-  window.open(whatsappURL, '_blank');
-});
-</script>
-
-<style>
-/* Glassmorphism cards */
-.glass-card {
-  backdrop-filter: blur(10px);
-  background: rgba(255,255,255,0.6);
-  border: 1px solid rgba(255,255,255,0.3);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.glass-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 15px 25px rgba(0,0,0,0.2);
-}
-
-/* Gradient WhatsApp button */
-.btn-gradient {
-  background: linear-gradient(90deg, #22c55e, #16a34a);
-}
-.btn-gradient:hover {
-  background: linear-gradient(90deg, #16a34a, #22c55e);
-}
-
-/* Icon wrapper */
-.icon-wrapper {
-  width:50px; height:50px;
-  display:flex; align-items:center; justify-content:center;
-  border-radius:50%;
-  background: rgba(34,197,94,0.15);
-  margin:0 auto;
-}
-</style>
-  
+  </style>
 </head>
 <body>
 
@@ -125,125 +81,124 @@ document.getElementById('contactForm').addEventListener('submit', function(e){
   </div>
 </nav>
 
-<!-- ================= Contact Section (Premium Bootstrap + WhatsApp) ================= -->
-<section class="position-relative py-5" style="background: linear-gradient(to bottom, #e6f5f0, #ffffff);">
 
-  <!-- Hero Section -->
-  <div class="container text-center mb-5 position-relative" style="z-index:2;">
-    <span class="d-inline-block px-3 py-1 rounded-pill bg-success bg-opacity-10 text-success fw-medium mb-3">Contact Us</span>
-    <h1 class="display-4 fw-bold">Let's Plan Your <span class="text-success">Adventure</span></h1>
-    <p class="lead text-muted">Have questions or ready to book? Reach out and our friendly team will assist you.</p>
-  </div>
-
-  <!-- Contact Info Cards -->
-  <div class="container mb-5 contact-premium">
-    <div class="row g-4 justify-content-center">
-
-      <div class="col-6 col-md-3">
-        <div class="card shadow-lg rounded-4 p-4 text-center glass-card">
-          <div class="icon-wrapper mb-3">
-            <i class="bi bi-telephone-fill text-success fs-5"></i>
-          </div>
-          <h5 class="fw-semibold mb-1">Phone</h5>
-          <a href="tel:+919825282571" class="d-block text-muted">+91 83728 73663</a>
-          <a href="tel:+919825282571" class="d-block text-muted">+91 98252 82571</a>
-        </div>
-      </div>
-
-      <div class="col-6 col-md-3">
-        <div class="card shadow-lg rounded-4 p-4 text-center glass-card">
-          <div class="icon-wrapper mb-3">
-            <i class="bi bi-envelope-fill text-success fs-5"></i>
-          </div>
-          <h5 class="fw-semibold mb-1">Email</h5>
-          <a href="mailto:info@shivdurgatravels.com" class="d-block text-muted">info@shivdurgatravels.com</a>
-          <a href="mailto:bookings@shivdurgatravels.com" class="d-block text-muted">bookings@shivdurgatravels.com</a>
-        </div>
-      </div>
-
-      <div class="col-6 col-md-3">
-        <div class="card shadow-lg rounded-4 p-4 text-center glass-card">
-          <div class="icon-wrapper mb-3">
-            <i class="bi bi-geo-alt-fill text-success fs-5"></i>
-          </div>
-          <h5 class="fw-semibold mb-1">Address</h5>
-          <p class="mb-0 text-muted">Sundarban, South 24 Parganas<br>West Bengal, India – 743370</p>
-        </div>
-      </div>
-
-      <div class="col-6 col-md-3">
-        <div class="card shadow-lg rounded-4 p-4 text-center glass-card">
-          <div class="icon-wrapper mb-3">
-            <i class="bi bi-clock-fill text-success fs-5"></i>
-          </div>
-          <h5 class="fw-semibold mb-1">Working Hours</h5>
-          <p class="mb-0 text-muted">Mon–Sat: 8 AM – 8 PM<br>Sun: 9 AM – 6 PM</p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-  <!-- Contact Form + Map -->
+<!-- ================= HERO ================= -->
+<section class="gallery-hero text-center text-white"  style="background:url('images/hero-sundarban.jpg') center/cover no-repeat;">
   <div class="container">
-    <div class="row g-5 align-items-start">
-
-      <!-- Form -->
-      <div class="col-lg-6">
-        <div class="card shadow-lg rounded-4 p-4 glass-card">
-          <h2 class="fw-bold mb-4">Send Us a Message</h2>
-          <form id="contactForm">
-            <div class="row g-3 mb-3">
-              <div class="col-sm-6">
-                <input type="text" id="name" class="form-control" placeholder="Your Name *" required>
-              </div>
-              <div class="col-sm-6">
-                <input type="email" id="email" class="form-control" placeholder="Email Address *" required>
-              </div>
-            </div>
-            <div class="row g-3 mb-3">
-              <div class="col-sm-6">
-                <input type="tel" id="phone" class="form-control" placeholder="Phone Number">
-              </div>
-              <div class="col-sm-6">
-                <input type="text" id="subject" class="form-control" placeholder="Subject *" required>
-              </div>
-            </div>
-            <div class="mb-3">
-              <textarea id="message" rows="5" class="form-control" placeholder="Your Message *" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-lg w-100 btn-gradient text-white fw-bold">Send via WhatsApp</button>
-          </form>
-        </div>
-      </div>
-
-      <!-- Map + Info -->
-      <div class="col-lg-6 d-flex flex-column gap-4">
-        <div class="overflow-hidden rounded-4 shadow-lg" style="height:450px;">          
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3695.7780653528353!2d88.82294407506426!3d22.13443597980611!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a018996fc5a790f%3A0xce1433e2e34d1f38!2sSPOT%20ON%2040134%20Hotel%20Dolphin!5e0!3m2!1sen!2sin!4v1768756077047!5m2!1sen!2sin" 
-          width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-          </div>
-        <div class="p-4 rounded-4 shadow-lg glass-card" style="background: rgba(22,163,74,0.85); color:#fff;">
-          <h5 class="fw-semibold mb-3">Why Book with Us?</h5>
-          <ul class="small mb-0">
-            <li>✔ 15+ years of trusted experience</li>
-            <li>✔ Personal boats & comfortable stays</li>
-            <li>✔ Expert local guides</li>
-            <li>✔ Customizable tour packages</li>
-            <li>✔ 24/7 customer support</li>
-          </ul>
-        </div>
-      </div>
-
-    </div>
+    <h1 class="display-4 fw-bold">Our Gallery</h1>
+    <p class="fs-5 text-light">Real moments from Sundarban adventures</p>
   </div>
-
 </section>
 
+<!-- ================= FILTER ================= -->
+<section class="py-4">
+  <div class="container text-center">
+    <!-- <div class="btn-group flex-wrap gap-2 gallery-filter">
+      <button class="btn btn-success">All</button>
+      <button class="btn btn-outline-success">Boat</button>
+      <button class="btn btn-outline-success">Wildlife</button>
+      <button class="btn btn-outline-success">Resort</button>
+      <button class="btn btn-outline-success">Guests</button>
+    </div> -->
+  </div>
+</section>
 
+<!-- ================= GALLERY ================= -->
+<section class="pb-5">
+  <div class="container">
+    <div class="row g-3">
 
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="gallery-card">
+          <img src="images/boat1.jpeg">
+          <div class="gallery-overlay"><span>Boat Safari</span></div>
+        </div>
+      </div>
 
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="gallery-card">
+          <img src="images/resort1.jpeg">
+          <div class="gallery-overlay"><span>Resort</span></div>
+        </div>
+      </div>
 
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="gallery-card">
+          <img src="images/room1.jpeg">
+          <div class="gallery-overlay"><span>Room</span></div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="gallery-card">
+          <img src="images/resort2.jpeg">
+          <div class="gallery-overlay"><span>Resort Stay</span></div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="gallery-card">
+          <img src="images/boat2.jpeg">
+          <div class="gallery-overlay"><span>Boat</span></div>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="gallery-card">
+          <img src="images/wildlife1.jpeg">
+          <div class="gallery-overlay"><span>Wildlife</span></div>
+        </div>
+      </div>
+      
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="gallery-card">
+          <img src="images/Hotel.jpeg">
+          <div class="gallery-overlay"><span>Resort Stay</span></div>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="gallery-card">
+          <img src="images/room3.jpeg">
+          <div class="gallery-overlay"><span>Room</span></div>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="gallery-card">
+          <img src="images/boat_view_night.jpeg">
+          <div class="gallery-overlay"><span>Boat</span></div>
+        </div>
+      </div>
+       <div class="col-6 col-md-4 col-lg-3">
+        <div class="gallery-card">
+          <img src="images/boat_interior.jpeg">
+          <div class="gallery-overlay"><span>Boat</span></div>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="gallery-card">
+          <img src="images/resort_room_1.jpeg">
+          <div class="gallery-overlay"><span>Room</span></div>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="gallery-card">
+          <img src="images/washroom.jpeg">
+          <div class="gallery-overlay"><span>Washroom</span></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= CTA ================= -->
+<section class="cta py-5 text-center">
+  <div class="container">
+    <h2 class="fw-bold mb-3">Ready to Explore Sundarban?</h2>
+    <a href="https://wa.me/919825282571" class="btn btn-light btn-lg rounded-pill px-5">
+      <i class="bi bi-whatsapp"></i> Book Now
+    </a>
+  </div>
+</section>
 
 
 <!-- FOOTER -->
@@ -291,7 +246,7 @@ document.getElementById('contactForm').addEventListener('submit', function(e){
       <!-- Quick Links -->
       <div class="col-lg-3 col-md-6">
         <h6 class="fw-semibold mb-3" style="color:#e2aa3b;">Quick Links</h6>
-         <ul class="list-unstyled small">
+        <ul class="list-unstyled small">
           <li class="mb-2"><a href="index.html" class="text-white-50 text-decoration-none">Home</a></li>
           <li class="mb-2"><a href="about.html" class="text-white-50 text-decoration-none">About Us</a></li>
           <li class="mb-2"><a href="services.html" class="text-white-50 text-decoration-none">Our Services</a></li>
